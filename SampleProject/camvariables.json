@@ -133,13 +133,13 @@
       "immutable_after_create": false
     },
     {
-      "name": "UbuntuVM_disk_lable",
-      "label": "Ubuntu Vm Disk Lable",
-      "description": "The name of the disk. Forces a new disk if changed. This should only be a longer path if attaching an external disk.",
+      "name": "UbuntuVM_disk_label",
+      "label": "Ubuntu Vm Disk Label",
+      "description": "The label of the disk. Forces a new disk if changed. This should only be a longer path if attaching an external disk.",
       "type": "string",
       "default": "",
       "validation": "",
-      "group_name": "",
+      "group_name": "instances",
       "required": true,
       "secured": false,
       "hidden": false,

@@ -39,9 +39,9 @@ variable "UbuntuVM_memory" {
   description = "Memory allocation."
 }
 
-variable "UbuntuVM_disk_lable" {
+variable "UbuntuVM_disk_label" {
   type = "string"
-  description = "The name of the disk. Forces a new disk if changed. This should only be a longer path if attaching an external disk."
+  description = "The label of the disk. Forces a new disk if changed. This should only be a longer path if attaching an external disk."
 }
 
 variable "UbuntuVM_disk_size" {
