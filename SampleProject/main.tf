@@ -53,7 +53,7 @@ resource "vsphere_virtual_machine" "UbuntuVM" {
     template_uuid = "${data.vsphere_virtual_machine.UbuntuVM_template.id}"
   }
   disk {
-    name = "${var.UbuntuVM_disk_name}"
+    lable = "${var.UbuntuVM_disk_lable}"
     size = "${var.UbuntuVM_disk_size}"
   }
 }
