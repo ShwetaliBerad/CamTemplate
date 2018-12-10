@@ -8,5 +8,4 @@ provider "ad" {
 resource "ad_computer" "myserver" {
  computer_name="${var.computer_name}"
  domain="${var.computer_name}"
- description="${var.computer_description}"
 }
