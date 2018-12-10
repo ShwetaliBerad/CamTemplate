@@ -27,8 +27,3 @@ variable "computer_domain" {
   type = "string"
   description = "Generated"
 }
-
-variable "computer_description" {
-  type = "string"
-  description = "Generated"
-}
