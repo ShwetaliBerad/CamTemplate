@@ -10,10 +10,6 @@
     {
       "name": "AD Computer",
       "label": "AD_Computer"
-    },
-    {
-      "name": "AD Computer to OU",
-      "label": "AD_Computer_to_OU"
     }
   ],
   "output_groups": [ ],
