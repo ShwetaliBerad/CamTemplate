@@ -1,18 +1,12 @@
 provider "ad" {
-  domain           = "vsphereadmin"
-  ip               = "10.136.54.175"
-  user             = "admin"
-  password         = "gsLab!23"
+  domain           = "${var.ad_server}"
+  ip               = "${var.ad_server_domain}"
+  user             = "${var.user}"
+  password         = "${var.password}"
 }
 
 resource "ad_computer" "myserver" {
- computer_name="myserver"
- domain="vsphereadmin.com"
+ computer_name="${var.computer_name}"
+ domain="${var.computer_name}"
+ description="${var.computer_description}"
 }
-
-resource "ad_computer_to_ou" "myouserver" {
- computer_name="myouserver"
- ou_distinguished_name="ou=SubOU,ou=MyOrganizationalUnit,dc=vsphereadmin,dc=com"
-}
-
-
